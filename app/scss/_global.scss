@@ -3,15 +3,17 @@ body{
     height: 100%;
 }
 body{
-    
     display: flex;
     flex-direction: column;
+    font-family: 'Rubik-MediumItalic';
+    font-size: 20px;
+    color: $gray;
 }
 .main{
     flex-grow: 1;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0;
 }
