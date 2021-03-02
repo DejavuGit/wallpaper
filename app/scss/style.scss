@@ -172,6 +172,117 @@
             border-color: $bluel;
         }
     }
+}
+
+.footer{
+    padding-top: 20px;
+    background: linear-gradient(106deg, rgba(167,215,231,1) 35%, rgba(151,71,200,1) 80%);
+    &__title{
+        color: #fff;
+        font-size: 32px;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &__subscribe{
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    &__form{
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input,
+    &__btn{
+        color: $blue;
+        border: 1px solid $gray;
+        background-color: #ffffff;
+        outline: none;
+        font-size: 28px;
+    }
+    &__input{
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-right: 0;
+        width: 100%;
+        padding: 0 15px;  
+    }
+    &__btn{
+        cursor: pointer;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-left: 0;
+        padding-right: 13px;
+         
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav{
+        width: 270px;
+    }
+    &__nav__title{
+        font-size:32px ;
+        color: #fff;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+    &__link{
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 10px;
+        display: block;
+        transition: all .4s ease;
+        &:hover{
+            color: $bluel;
+        }
+    }
+    &__contact {
+        width: 270px;
+    }
+    &__contact a {
+        display: block;
+        color: #fff;
+        margin-bottom: 10px;
+        transition: all .4s ease;
+        &:hover{
+            color: $bluel;
+        }
+    }
+
+}
+.social__list{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.social__link{
+    path{
+        transition: fill .4s ease;
+    }
+}
+.social__link:hover{
+    path{
+        fill:$bluel;
+    }
+}
+.footer__bot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $grayl;
+    padding: 10px 0;
+    color: #fff;
+}
+.footer__accept{
+    display: flex;
+    align-items: center;
+}
+.footer__accept-text{
+    margin-right: 15px;
 
 }
 
