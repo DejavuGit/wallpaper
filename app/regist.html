@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Wallpeper from Fedor</title>
+    <link rel="stylesheet" href="fonts/fontsIcons/IconsFonts.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-container">
+          <div class="header__wrap">
+              <a href="index.html" class="logo">
+                  <img src="images/logo-mini.png" alt="logo img" class="logo__png" />
+              </a>
+  
+              <nav class="menu">
+                  <input class="menu__checkbox" id="checkbox" type="checkbox">
+                  <label for="checkbox" class="menu__btn">
+                  <div class="menu__icon"></div>
+                  </label>
+                  <div class="menu__container">
+                      <ul class="menu__list">
+                          <li><a href="index.html" class="menu__link">Главная</a></li>
+                          <li class="dropdown">
+                              <a href="catalog.html" class="menu__link ">Каталог</a>
+                              <ul class="dropdown__menu">
+                                  <li><a href="catalog.html" class="dropdown__link">Ар-деко</a></li>
+                                  <li><a href="catalog.html" class="dropdown__link">Флора и фауна</a></li>
+                                  <li><a href="catalog.html" class="dropdown__link">Город</a></li>
+                                  <li><a href="catalog.html" class="dropdown__link">Звёзды</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="product.html" class="menu__link  ">Товар</a></li>
+                          <li><a href="blog.html" class="menu__link ">Блог</a></li>
+                          <li><a href="regist.html" class="menu__link menu__link--active">Login</a></li>
+                      </ul>
+                  </div>
+  
+                  
+              </nav>
+  
+              <ul class="user__list">
+                  
+                  <li class="user__item">
+                      <a href="#" class="user__link">
+                          <i class="icon-star">
+                              <span class="user__num">8</span>
+                          </i>
+                          <p class="user__text">закладки</p>
+                      </a>
+                  </li>
+                  <li class="user__item">
+                      <a href="#" class="user__link">
+                          <i class="icon-cart">
+                              <span class="user__num">3</span>
+                          </i>
+                          <p class="user__text">корзина</p>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </header>
+
+    <main class="main">
+      <section class="regist">
+        <div id="back">
+          <div class="backRight"></div>
+          <div class="backLeft"></div>
+        </div>
+        <div id="slideBox">
+
+
+          <div class="topLayer">
+            <div class="left-item">
+              <div class="content">
+                <h2 class="regist__tilte">Регистрация</h2>
+                <form class="regist-form__left" method="post" onsubmit="return false;">
+                  <div class="login__row login__row-left">
+                   <i class="left__icon icon-pers"></i>
+                   <input type="text" class="regist__input regist__input-left" placeholder="Логин" />
+                  </div>
+                  <div class="login__row login__row-left">
+                   <i class="left__icon icon-key"></i>
+                   <input type="text" class="regist__input regist__input-left" placeholder="Пароль" />
+                  </div>
+                  <div class="regist__box">
+                   <button id="goLeft" class="main-btn off">Есть аккаунт?</button>
+                   <button class="main-btn main-btn__left">Отправить</button>
+                  </div>
+
+
+                 </form>
+              </div>
+            </div>
+
+            <div class="regist-right">
+              <div class="content">
+                <h2 style="color:#5f16ec;">Вход</h2>
+                <form class="regist-form__right" method="post" onsubmit="return false;">
+                 <div class="login__row login__row-right">
+                  <i class="right__icon icon-pers"></i>
+                  <input type="text" class="regist__input" placeholder="Логин" />
+                 </div>
+                 <div class="login__row login__row-right">
+                  <i class="right__icon icon-key"></i>
+                  <input type="text" class="regist__input" placeholder="Пароль" />
+                 </div>
+                 <div class="regist__box">
+                  <button id="goRight" class="main-btn off">Нет аккаунта?</button>
+                  <button id="login" class="main-btn" type="submit">Войти</button>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

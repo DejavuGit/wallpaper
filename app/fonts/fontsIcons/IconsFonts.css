@@ -1,0 +1,108 @@
+
+
+@font-face {
+  font-family: 'icons';
+  src:  url('../../fonts/fontsIcons/icons.eot?4v4tkw');
+  src:  url('../../fonts/fontsIcons/icons.eot?4v4tkw#iefix') format('embedded-opentype'),
+    url('../fontsIcons/icons.ttf?4v4tkw') format('truetype'),
+    url('../fontsIcons/icons.woff?4v4tkw') format('woff'),
+    url('../fontsIcons/icons?4v4tkw#icons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wave-2:before {
+  content: "\e914";
+}
+.icon-wave-6:before {
+  content: "\e915";
+}
+.icon-wave-5:before {
+  content: "\e916";
+}
+.icon-wave-4:before {
+  content: "\e917";
+}
+.icon-wave-1:before {
+  content: "\e918";
+}
+.icon-wave-3:before {
+  content: "\e919";
+}
+.icon-first:before {
+  content: "\e913";
+}
+.icon-box:before {
+  content: "\e912";
+}
+.icon-star:before {
+  content: "\e904";
+}
+.icon-picture:before {
+  content: "\e910";
+}
+.icon-calendar:before {
+  content: "\e90d";
+}
+.icon-cart:before {
+  content: "\e903";
+}
+.icon-chat:before {
+  content: "\e908";
+}
+.icon-wish:before {
+  content: "\e90c";
+}
+.icon-key:before {
+  content: "\e911";
+}
+.icon-ar-down:before {
+  content: "\e900";
+}
+.icon-ar-l:before {
+  content: "\e901";
+}
+.icon-ar-r:before {
+  content: "\e902";
+}
+.icon-check:before {
+  content: "\e905";
+}
+.icon-home:before {
+  content: "\e906";
+}
+.icon-instagram:before {
+  content: "\e907";
+}
+.icon-pers:before {
+  content: "\e909";
+}
+.icon-pinterest:before {
+  content: "\e90a";
+}
+.icon-search:before {
+  content: "\e90b";
+}
+.icon-telegram:before {
+  content: "\e90e";
+}
+.icon-vk:before {
+  content: "\e90f";
+}

@@ -1,8 +1,28 @@
-$gray:#48494b;
-$grayl:#c4c4c4;
-$puple:#40219a;
-$blue:#33478f;
-$bluel:#51c1e4;
+
+// $grayl:#c4c4c4;
+// $grayl-2:#BDB4A5;
+// $silver:#bbedff;
+$red:#930000;
+$green:#57CC00;
+// $filterbg:#e2faff;
+// $catalog-bg:#f2f0d0;
+
+
+$bg:#e6e7f8;
+
+$blue:#48b9e4;
+$laz:#85F8FF;
+$gray-a:#adadad;
+$gray-d:#dcdcdc;
+$yellow:#ffdb50;
+$puple:#7E00FF;
+$black:#2F3436;
+
+
+// #c17cff
+// 3px solid #ac60fa
+
+
 
 %lobster{
     font-family: 'Lobster-Regular', sans-serif;
@@ -12,4 +32,10 @@ $bluel:#51c1e4;
 %rubic{
     font-family: 'Rubik-MediumItalic', sans-serif;
     font-weight: 500;
+}
+@function max($numbers...){
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...){
+    @return m#{i}n(#{$numbers});
 }

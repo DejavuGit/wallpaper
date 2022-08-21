@@ -2,266 +2,550 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallpeper from Fedor</title>
-    <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wallpeper from Fedor</title>
+  <link rel="stylesheet" href="fonts/fontsIcons/IconsFonts.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__top">
-                    <a href="#" class="logo">
-                        <img class="logo__img" src="images/logo-mini.png" alt="голотип">
-                    </a>
-                    <div class="search">
-                        <input class="search__input" type="text" placeholder="Что ищите?">
-                        <button class="search__btn">
-                            <span class="search__icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"
-                                    focusable="false">
-                                    <path
-                                        d="M10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18ZM10,4a6,6,0,1,0,6,6A6.007,6.007,0,0,0,10,4Z">
-                                    </path>
-                                    <path
-                                        d="M21,22a1,1,0,0,1-.707-0.293l-4-4a1,1,0,0,1,1.414-1.414l4,4A1,1,0,0,1,21,22Z">
-                                    </path>
-                                </svg>
-                            </span>
-                        </button>
-                    </div>
-                    <div class="user-nav">
-                        <ul class="user-nav__list">
-                            <li class="user-nav__item">
-                                <a class="user-nav__link" href="#popup">
-                                    <span class="user-nav__icon"><svg width="30" height="30" viewBox="0 0 30 30"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M25.3104 25.5078C25.2564 22.0511 24.1795 18.908 22.2648 16.6324C20.3613 14.3706 17.7815 13.125 15 13.125C12.2184 13.125 9.63865 14.3706 7.73511 16.6324C5.82226 18.9056 4.74607 22.0443 4.68982 25.4967C5.77146 26.0385 10.2474 28.125 15 28.125C20.1391 28.125 24.3073 26.0508 25.3104 25.5078V25.5078Z"
-                                                fill="#48494B" />
-                                            <path
-                                                d="M15 12.1875C17.8477 12.1875 20.1563 9.87897 20.1563 7.03125C20.1563 4.18353 17.8477 1.875 15 1.875C12.1523 1.875 9.84375 4.18353 9.84375 7.03125C9.84375 9.87897 12.1523 12.1875 15 12.1875Z"
-                                                fill="#48494B" />
-                                        </svg>
-                                    </span>
-                                    <span class="user-nav__text">Войти</span>
-                                    <div class="popup" id="popup">
-                                        <div class="popup__inner">
-                                            <form class="popup__form" action="#">
-                                                <label class="popup__label">Регистрация
-                                                    <input class="popup__input" placeholder="Логин" type="text"
-                                                        required>
-                                                    <input class="popup__input" placeholder="Почта" type="text"
-                                                        required>
-                                                    <input class="popup__input" placeholder="Пароль" type="password"
-                                                        required>
-                                                </label>
-                                                <button class="popup__btn" type="submit">Подтвердить
-                                                </button>
-                                            </form>
-                                            <a class="popup__close" href="#">X</a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="user-nav__item">
-                                <a class="user-nav__link" href="#">
-                                    <span class="user-nav__icon"><svg width="30" height="30" viewBox="0 0 30 30"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M14.6777 27.6562H6.24022C4.94788 27.6562 3.89648 26.6048 3.89648 25.3124V4.68749C3.89648 3.39515 4.94788 2.34374 6.24022 2.34374H20.6478C21.9402 2.34374 22.9916 3.39515 22.9916 4.68749V15.7617C22.9916 16.4089 23.5162 16.9336 24.1634 16.9336C24.8107 16.9336 25.3353 16.4089 25.3353 15.7617V4.68749C25.3353 2.10281 23.2325 0 20.6478 0H6.24022C3.65554 0 1.55273 2.10281 1.55273 4.68749V25.3124C1.55273 27.8971 3.65554 29.9999 6.24022 29.9999H14.6777C15.3249 29.9999 15.8496 29.4753 15.8496 28.8281C15.8496 28.1808 15.325 27.6562 14.6777 27.6562Z"
-                                                fill="#48494B" />
-                                            <path
-                                                d="M19.4824 9.90232H12.0996C11.4524 9.90232 10.9277 10.427 10.9277 11.0742C10.9277 11.7214 11.4524 12.2461 12.0996 12.2461H19.4824C20.1296 12.2461 20.6543 11.7214 20.6543 11.0742C20.6543 10.427 20.1297 9.90232 19.4824 9.90232Z"
-                                                fill="#48494B" />
-                                            <path
-                                                d="M12.0996 19.2773C11.4524 19.2773 10.9277 19.8019 10.9277 20.4492C10.9277 21.0964 11.4524 21.621 12.0996 21.621H13.8591C14.5063 21.621 15.0309 21.0964 15.0309 20.4492C15.0309 19.8019 14.5063 19.2773 13.8591 19.2773H12.0996Z"
-                                                fill="#48494B" />
-                                            <path
-                                                d="M19.4824 5.21483H12.0996C11.4524 5.21483 10.9277 5.73948 10.9277 6.3867C10.9277 7.03393 11.4524 7.55858 12.0996 7.55858H19.4824C20.1296 7.55858 20.6543 7.03393 20.6543 6.3867C20.6543 5.73948 20.1297 5.21483 19.4824 5.21483Z"
-                                                fill="#48494B" />
-                                            <path
-                                                d="M20.6543 15.7617C20.6543 15.1145 20.1296 14.5898 19.4824 14.5898H12.0996C11.4524 14.5898 10.9277 15.1145 10.9277 15.7617C10.9277 16.4089 11.4524 16.9335 12.0996 16.9335H19.4824C20.1297 16.9335 20.6543 16.4089 20.6543 15.7617Z"
-                                                fill="#48494B" />
-                                            <path
-                                                d="M7.52929 16.9335C8.1765 16.9335 8.70117 16.4089 8.70117 15.7617C8.70117 15.1145 8.1765 14.5898 7.52929 14.5898C6.88209 14.5898 6.35742 15.1145 6.35742 15.7617C6.35742 16.4089 6.88209 16.9335 7.52929 16.9335Z"
-                                                fill="#48494B" />
-                                            <path
-                                                d="M27.3713 20.3417C26.6933 19.6553 25.7647 19.2773 24.7564 19.2773C23.7531 19.2773 22.8866 19.5963 22.2373 20.1914C21.5882 19.5963 20.7217 19.2773 19.7185 19.2773C18.7102 19.2773 17.7816 19.6553 17.1035 20.3417C16.4097 21.0441 16.0276 22.0317 16.0276 23.1225C16.0276 25.4211 17.9802 26.8769 19.5491 28.0466C20.2626 28.5786 20.9366 29.0811 21.3246 29.5631C21.5471 29.8393 21.8827 30 22.2374 30C22.5921 30 22.9277 29.8393 23.1502 29.5631C23.5382 29.0811 24.2122 28.5786 24.9257 28.0466C26.4947 26.8768 28.4473 25.421 28.4473 23.1224C28.4472 22.0316 28.0651 21.044 27.3713 20.3417ZM23.5248 26.1676C23.0886 26.4928 22.6443 26.824 22.2373 27.1737C21.8303 26.824 21.3861 26.4928 20.9499 26.1676C19.6822 25.2224 18.3713 24.245 18.3713 23.1224C18.3713 22.1963 18.8874 21.621 19.7183 21.621C20.412 21.621 20.6819 21.9065 20.8246 22.1213C21.0136 22.4055 21.0624 22.7214 21.0695 22.7743C21.1044 23.3944 21.6153 23.8802 22.2373 23.8802C22.8594 23.8802 23.3703 23.3944 23.4052 22.7744C23.4123 22.7216 23.4611 22.4056 23.6501 22.1213C23.7928 21.9065 24.0628 21.621 24.7564 21.621C25.5873 21.621 26.1035 22.1963 26.1035 23.1224C26.1035 24.245 24.7926 25.2224 23.5248 26.1676Z"
-                                                fill="#48494B" />
-                                            <path
-                                                d="M7.52929 7.55858C8.1765 7.55858 8.70117 7.03391 8.70117 6.3867C8.70117 5.73949 8.1765 5.21483 7.52929 5.21483C6.88209 5.21483 6.35742 5.73949 6.35742 6.3867C6.35742 7.03391 6.88209 7.55858 7.52929 7.55858Z"
-                                                fill="#48494B" />
-                                            <path
-                                                d="M7.52929 12.2461C8.1765 12.2461 8.70117 11.7214 8.70117 11.0742C8.70117 10.427 8.1765 9.90232 7.52929 9.90232C6.88209 9.90232 6.35742 10.427 6.35742 11.0742C6.35742 11.7214 6.88209 12.2461 7.52929 12.2461Z"
-                                                fill="#48494B" />
-                                            <path
-                                                d="M7.52929 21.621C8.1765 21.621 8.70117 21.0964 8.70117 20.4492C8.70117 19.802 8.1765 19.2773 7.52929 19.2773C6.88209 19.2773 6.35742 19.802 6.35742 20.4492C6.35742 21.0964 6.88209 21.621 7.52929 21.621Z"
-                                                fill="#48494B" />
-                                        </svg></span>
-                                    <span class="user-nav__text">Избранное</span>
-                                </a>
-                            </li>
-                            <li class="user-nav__item"><a class="user-nav__link" href="#">
-                                    <span class="user-nav__icon"><svg width="30" height="34" viewBox="0 0 30 34"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M30 26.1875H8.68335L8.06947 21.7625H26.3015L29.3267 4.0625H5.61424L5.15394 0.74375H0V2.95625H3.66959C4.15224 6.43504 6.382 22.5102 7.199 28.4H11.9118H25.1471H30V26.1875ZM6.99535 14.0187H10.5882V19.55H7.76265L6.99535 14.0187ZM17.6471 11.8062V6.275H21.1765V11.8062H17.6471ZM21.1765 14.0187V19.55H17.6471V14.0187H21.1765ZM15.8824 11.8062H12.3529V6.275H15.8824V11.8062ZM15.8824 14.0187V19.55H12.3529V14.0187H15.8824ZM22.9412 19.55V14.0187H25.8203L24.8749 19.55H22.9412ZM26.1985 11.8062H22.9412V6.275H27.1438L26.1985 11.8062ZM10.5882 6.275V11.8062H6.68841L5.92118 6.275H10.5882Z"
-                                                fill="#48494B" />
-                                            <path
-                                                d="M11.9124 33.9313C13.1307 33.9313 14.1183 32.6931 14.1183 31.1656C14.1183 29.6382 13.1307 28.4 11.9124 28.4C10.6941 28.4 9.70642 29.6382 9.70642 31.1656C9.70642 32.6931 10.6941 33.9313 11.9124 33.9313Z"
-                                                fill="#48494B" />
-                                            <path
-                                                d="M25.1473 33.9313C26.3655 33.9313 27.3531 32.6931 27.3531 31.1656C27.3531 29.6382 26.3655 28.4 25.1473 28.4C23.929 28.4 22.9414 29.6382 22.9414 31.1656C22.9414 32.6931 23.929 33.9313 25.1473 33.9313Z"
-                                                fill="#48494B" />
-                                        </svg>
-                                    </span>
-                                    <span class="user-nav__text">Корзина</span>
-                                </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="header__bot">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Каталог</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Новинки</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Блог</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Акции</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+  <header class="header">
+		<div class="container header-container">
+				<div class="header__wrap">
+						<a href="index.html" class="logo">
+								<img src="images/logo-mini.png" alt="logo img" class="logo__png" />
+						</a>
 
-    <main class="main">
+						<nav class="menu">
+								<input class="menu__checkbox" id="checkbox" type="checkbox">
+								<label for="checkbox" class="menu__btn">
+								<div class="menu__icon"></div>
+								</label>
+								<div class="menu__container">
+										<ul class="menu__list">
+												<li><a href="index.html" class="menu__link menu__link--active">Главная</a></li>
+												<li class="dropdown">
+														<a href="catalog.html" class="menu__link ">Каталог</a>
+														<ul class="dropdown__menu">
+																<li><a href="catalog.html" class="dropdown__link">Ар-деко</a></li>
+																<li><a href="catalog.html" class="dropdown__link">Флора и фауна</a></li>
+																<li><a href="catalog.html" class="dropdown__link">Город</a></li>
+																<li><a href="catalog.html" class="dropdown__link">Звёзды</a></li>
+														</ul>
+												</li>
+                        <li><a href="product.html" class="menu__link  ">Товар</a></li>
+												<li><a href="blog.html" class="menu__link ">Блог</a></li>
+												<li><a href="regist.html" class="menu__link">Login</a></li>
+										</ul>
+								</div>
 
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <h4 class="footer__title">Хотите получить уведомление о скидке и новой коллекции?</h4>
-            <div class="footer__subscribe">
-                <form  class="footer__form" action="#">
-                    <input  class="footer__input" type="text" placeholder="Введите ваш email">
-                    <button class="footer__btn">Подписаться</button>
-                </form>
+								
+						</nav>
+
+						<ul class="user__list">
+								
+								<li class="user__item">
+										<a href="#" class="user__link">
+												<i class="icon-star">
+														<span class="user__num">8</span>
+												</i>
+												<p class="user__text">закладки</p>
+										</a>
+								</li>
+								<li class="user__item">
+										<a href="#" class="user__link">
+												<i class="icon-cart">
+														<span class="user__num">3</span>
+												</i>
+												<p class="user__text">корзина</p>
+										</a>
+								</li>
+						</ul>
+				</div>
+		</div>
+</header>
+
+
+   <main class="main"> 
+    <section class="major-slider">
+      <div class="container">
+        <div class="slider">
+          <div class="major-slider__wrapper">
+
+            <div class="slide">
+              <img src="images/home-slider1.jpg" alt="swiper pic" class="swiper-img">
+              <h3 class="major-slider__text">Самые лучшие обои, только у нас</h3>
+              <a href="product.html" class="major-slider__link">Подробнее</a>
+              
+              
             </div>
-            <div class="footer__content">
-                <div class="footer__nav">
-                    <a  class="footer__logo"href="#">
-                        <img src="images/footer-logo.png" alt="логотип футтера">
-                    </a>
-                </div>
-                <div class="footer__nav">
-                    <h4 class="footer__nav__title">О компании</h4>
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a class="footer__link" href="#" >Вакансии</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#" >Шоурум</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#" >Как сделать заказ</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#" >Пользовательское соглашение</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__nav">
-                    <h4 class="footer__nav__title">Каталог</h4>
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a class="footer__link" href="#" >Акции</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#" >Распродажа</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#" >Доставка</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#" >Оплата</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__contact">
-                    <h4 class="footer__nav__title">Контакты</h4>
-                    <a class="footer__adress" href="#" >г.Санкт-Петергбург Лиговский пр-т 75</a>
-                    <a class="footer__email" href="mailto:Dejavugit@gmail.com" >Dejavugit@gmail.com</a>
-                    <a class="footer__phone" href="tel:+79533629737" >+7-953-362-97-37</a>
-                    <ul class="social__list">
-                        <li class="social__list">
-                            <a class="social__link" href="#">
-                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M36.8145 0H13.1806C5.79032 0 0 5.79193 0 13.1839V36.8177C0 44.2097 5.79032 50 13.1806 50H36.8145C44.2081 50 50 44.2097 50 36.8161V13.1839C50 5.79193 44.2081 0 36.8145 0ZM46.7742 36.8161C46.7742 42.4919 42.4935 46.7726 36.8145 46.7726H13.1806C7.50484 46.7726 3.22581 42.4935 3.22581 36.8161V13.1839C3.22581 7.50645 7.50484 3.22581 13.1806 3.22581H36.8145C42.4935 3.22581 46.7742 7.50645 46.7742 13.1839V36.8161Z" fill="#33478F"/>
-                                    <path d="M25.8193 12C18.6264 12 15 16.9911 15 21.1523C15 23.6729 15.986 25.9137 18.0986 26.7506C18.1877 26.7854 18.2754 26.8035 18.3576 26.8035C18.5943 26.8035 18.7851 26.6587 18.8576 26.383C18.9286 26.1267 19.0929 25.4792 19.1681 25.2062C19.2684 24.8386 19.2308 24.7118 18.9509 24.3915C18.3409 23.6952 17.9496 22.7942 17.9496 21.5199C17.9496 17.8156 20.8156 14.5025 25.4056 14.5025C29.4707 14.5025 31.7045 16.9062 31.7045 20.1162C31.7045 24.34 29.7729 27.9065 26.9055 27.9065C25.3193 27.9065 24.1356 26.6378 24.5158 25.0837C24.9712 23.2273 25.8541 21.2247 25.8541 19.8864C25.8541 18.686 25.187 17.6875 23.8111 17.6875C22.1901 17.6875 20.8894 19.3071 20.8894 21.4796C20.8894 22.861 21.3726 23.7983 21.3726 23.7983C21.3726 23.7983 19.7182 30.5915 19.4271 31.7822C18.8478 34.151 19.3394 37.056 19.3812 37.3485C19.3951 37.4529 19.4842 37.51 19.5761 37.51C19.6374 37.51 19.7001 37.4849 19.7405 37.432C19.8909 37.2454 21.8183 34.9406 22.4742 32.6372C22.6622 31.9855 23.5395 28.6112 23.5395 28.6112C24.0659 29.5818 25.6034 30.4355 27.2397 30.4355C32.1055 30.4355 35.4074 26.1448 35.4074 20.3975C35.406 16.0483 31.6028 12 25.8193 12Z" fill="#33478F"/>
-                                    </svg>
-                            </a>
-                        </li>
-                        <li class="social__list">
-                            <a class="social__link" href="#">
-                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M36.8145 0H13.1806C5.79032 0 0 5.79193 0 13.1839V36.8177C0 44.2097 5.79032 50 13.1806 50H36.8145C44.2081 50 50 44.2097 50 36.8161V13.1839C50 5.79193 44.2081 0 36.8145 0ZM46.7742 36.8161C46.7742 42.4919 42.4935 46.7726 36.8145 46.7726H13.1806C7.50484 46.7726 3.22581 42.4935 3.22581 36.8161V13.1839C3.22581 7.50645 7.50484 3.22581 13.1806 3.22581H36.8145C42.4935 3.22581 46.7742 7.50645 46.7742 13.1839V36.8161Z" fill="#33478F"/>
-                                    <g clip-path="url(#clip0)">
-                                    <path d="M39.9707 18.8201C39.9004 17.2261 39.6426 16.1302 39.2734 15.1806C38.8924 14.1726 38.3064 13.2702 37.5386 12.52C36.7884 11.7582 35.88 11.1662 34.8837 10.7912C33.9286 10.4219 32.8385 10.1641 31.2445 10.0939C29.6385 10.0176 29.1287 10 25.0557 10C20.9826 10 20.4728 10.0176 18.8728 10.0879C17.2788 10.1582 16.1829 10.4162 15.2336 10.7852C14.2254 11.1662 13.3229 11.7522 12.5728 12.52C11.8109 13.2702 11.2191 14.1786 10.8439 15.1749C10.4746 16.1302 10.2169 17.2201 10.1466 18.8141C10.0704 20.42 10.0527 20.9299 10.0527 25.0029C10.0527 29.076 10.0704 29.5858 10.1406 31.1858C10.2109 32.7798 10.4689 33.8757 10.8382 34.8253C11.2191 35.8332 11.8109 36.7356 12.5728 37.4858C13.3229 38.2477 14.2313 38.8397 15.2276 39.2147C16.1829 39.5839 17.2728 39.8417 18.8671 39.912C20.4668 39.9825 20.9769 39.9999 25.0499 39.9999C29.123 39.9999 29.6328 39.9825 31.2328 39.912C32.8268 39.8417 33.9227 39.5839 34.872 39.2147C36.8882 38.4352 38.4822 36.8412 39.2617 34.8253C39.6307 33.8699 39.8887 32.7798 39.959 31.1858C40.0293 29.5858 40.0469 29.076 40.0469 25.0029C40.0469 20.9299 40.041 20.42 39.9707 18.8201ZM37.2691 31.0686C37.2046 32.5337 36.9585 33.3249 36.7534 33.8523C36.2493 35.1593 35.212 36.1965 33.905 36.7006C33.3776 36.9057 32.5807 37.1518 31.1213 37.2162C29.539 37.2867 29.0644 37.3041 25.0616 37.3041C21.0588 37.3041 20.5783 37.2867 19.0017 37.2162C17.5366 37.1518 16.7454 36.9057 16.218 36.7006C15.5676 36.4602 14.9756 36.0793 14.4951 35.5812C13.9969 35.0947 13.616 34.5086 13.3756 33.8583C13.1705 33.3308 12.9244 32.5337 12.8601 31.0745C12.7896 29.4922 12.7722 29.0174 12.7722 25.0146C12.7722 21.0118 12.7896 20.5313 12.8601 18.9549C12.9244 17.4898 13.1705 16.6986 13.3756 16.1712C13.616 15.5206 13.9969 14.9288 14.501 14.448C14.9872 13.9499 15.5733 13.569 16.2239 13.3288C16.7514 13.1237 17.5485 12.8776 19.0077 12.813C20.59 12.7428 21.0648 12.7251 25.0673 12.7251C29.0761 12.7251 29.5506 12.7428 31.1273 12.813C32.5924 12.8776 33.3836 13.1237 33.911 13.3288C34.5614 13.569 35.1534 13.9499 35.6339 14.448C36.132 14.9345 36.513 15.5206 36.7534 16.1712C36.9585 16.6986 37.2046 17.4955 37.2691 18.9549C37.3394 20.5373 37.357 21.0118 37.357 25.0146C37.357 29.0174 37.3394 29.4862 37.2691 31.0686Z" fill="#33478F"/>
-                                    <path d="M25.0557 17.2964C20.8011 17.2964 17.3491 20.7481 17.3491 25.003C17.3491 29.2578 20.8011 32.7096 25.0557 32.7096C29.3105 32.7096 32.7623 29.2578 32.7623 25.003C32.7623 20.7481 29.3105 17.2964 25.0557 17.2964ZM25.0557 30.002C22.2955 30.002 20.0566 27.7634 20.0566 25.003C20.0566 22.2426 22.2955 20.0039 25.0557 20.0039C27.8161 20.0039 30.0548 22.2426 30.0548 25.003C30.0548 27.7634 27.8161 30.002 25.0557 30.002V30.002Z" fill="#33478F"/>
-                                    <path d="M34.8663 16.9915C34.8663 17.9851 34.0607 18.7907 33.067 18.7907C32.0734 18.7907 31.2678 17.9851 31.2678 16.9915C31.2678 15.9977 32.0734 15.1924 33.067 15.1924C34.0607 15.1924 34.8663 15.9977 34.8663 16.9915V16.9915Z" fill="#33478F"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0">
-                                    <rect width="30" height="30" fill="white" transform="translate(10 10)"/>
-                                    </clipPath>
-                                    </defs>
-                                    </svg>
-                            </a>
-                        </li>
-                        <li class="social__list">
-                            <a class="social__link" href="#">
-                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M36.8145 0H13.1806C5.79032 0 0 5.79193 0 13.1839V36.8177C0 44.2097 5.79032 50 13.1806 50H36.8145C44.2081 50 50 44.2097 50 36.8161V13.1839C50 5.79193 44.2081 0 36.8145 0ZM46.7742 36.8161C46.7742 42.4919 42.4935 46.7726 36.8145 46.7726H13.1806C7.50484 46.7726 3.22581 42.4935 3.22581 36.8161V13.1839C3.22581 7.50645 7.50484 3.22581 13.1806 3.22581H36.8145C42.4935 3.22581 46.7742 7.50645 46.7742 13.1839V36.8161Z" fill="#33478F"/>
-                                    <path d="M21.7715 29.4768L21.2752 36.4568C21.9852 36.4568 22.2927 36.1518 22.6615 35.7855L25.9902 32.6043L32.8877 37.6555C34.1527 38.3605 35.044 37.9893 35.3852 36.4918L39.9127 15.2768L39.914 15.2755C40.3152 13.4055 39.2377 12.6743 38.0052 13.133L11.3927 23.3218C9.57647 24.0268 9.60397 25.0393 11.084 25.498L17.8877 27.6143L33.6915 17.7255C34.4352 17.233 35.1115 17.5055 34.5552 17.998L21.7715 29.4768Z" fill="#33478F"/>
-                                    </svg>
-                                    
-                            </a>
-                        </li>
-                        <li class="social__list">
-                            <a class="social__link" href="#">
-                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M36.8145 0H13.1806C5.79032 0 0 5.79193 0 13.1839V36.8177C0 44.2097 5.79032 50 13.1806 50H36.8145C44.2081 50 50 44.2097 50 36.8161V13.1839C50 5.79193 44.2081 0 36.8145 0ZM46.7742 36.8161C46.7742 42.4919 42.4935 46.7726 36.8145 46.7726H13.1806C7.50484 46.7726 3.22581 42.4935 3.22581 36.8161V13.1839C3.22581 7.50645 7.50484 3.22581 13.1806 3.22581H36.8145C42.4935 3.22581 46.7742 7.50645 46.7742 13.1839V36.8161Z" fill="#33478F"/>
-                                    <path d="M34.8938 26.035C34.4088 25.4225 34.5475 25.15 34.8938 24.6025C34.9 24.5963 38.9037 19.0638 39.3162 17.1875L39.3187 17.1862C39.5237 16.5025 39.3188 16 38.3275 16H35.0475C34.2125 16 33.8275 16.4312 33.6212 16.9138C33.6212 16.9138 31.9512 20.9113 29.5887 23.5025C28.8262 24.2513 28.4738 24.4913 28.0575 24.4913C27.8525 24.4913 27.5338 24.2513 27.5338 23.5675V17.1862C27.5338 16.3662 27.3 16 26.6087 16H21.4513C20.9275 16 20.6163 16.3825 20.6163 16.7388C20.6163 17.5163 21.7975 17.695 21.92 19.8825V24.6288C21.92 25.6688 21.7313 25.86 21.3125 25.86C20.1975 25.86 17.4913 21.8463 15.8875 17.2525C15.5638 16.3612 15.2475 16.0012 14.4063 16.0012H11.125C10.1887 16.0012 10 16.4325 10 16.915C10 17.7675 11.115 22.0063 15.185 27.6063C17.8975 31.4288 21.7175 33.5 25.1925 33.5C27.2813 33.5 27.5363 33.04 27.5363 32.2488C27.5363 28.5963 27.3475 28.2513 28.3938 28.2513C28.8788 28.2513 29.7137 28.4913 31.6637 30.335C33.8925 32.5213 34.2588 33.5 35.5063 33.5H38.7862C39.7212 33.5 40.195 33.04 39.9225 32.1325C39.2987 30.2238 35.0838 26.2975 34.8938 26.035V26.035Z" fill="#33478F"/>
-                                    </svg>
-                                    
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="slide">
+              <img src="images/home-slider2.jpg" alt="swiper pic" class="swiper-img">
+              <h3 class="major-slider__text">Самые самая свежая коллекция</h3>
+              <a href="product.html" class="major-slider__link">Купить</a>
             </div>
-            <div class="footer__bot">
-                <p class="footer__copy">© 2021 CodeAstrology. All Rights Reserved.</p>
-                <div class="footer__accept"> 
-                    <p class="footer__accept-text">Мы принимаем:</p>
-                    <img src="images/accept.png" alt="">
-                </div>
+            <div class="slide">
+              <img src="images/home-slider3.jpg" alt="swiper pic" class="swiper-img">
+              <h3 class="major-slider__text">Осталось совсем немного. Успейте купить</h3>
+              <a href="product.html" class="major-slider__link">Подробнее</a>
             </div>
+            <div class="slide">
+              <img src="images/home-slider4.jpg" alt="swiper pic" class="swiper-img">
+              <h3 class="major-slider__text">Только сегодня! <br>Скидка 15%</h3>
+              <a href="product.html" class="major-slider__link">Купить</a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev">
+            <i class="icon-ar-l"></i>
+          </div>
+          <div class="swiper-button-next">
+            <i class="icon-ar-r"></i>
+          </div>
         </div>
-    </footer>
-    <script src="js/main.min.js"></script>
+        
+
+      </div>
+    </section>
+     
+   <section class="galery">
+   <div class="container">
+    <div class="galery__wrapper">
+     <div class="galery__item">
+      <a href="catalog.html" class="galery__link">
+       <img class="galery__img" src="images/galery1.jpg" alt="картинка 1" />
+       <h3 class="galery__title  ">Сезонная распродажа</h3>
+       <p class="galery__text">Создавайте уют дома вместе с нами</p>
+      </a>
+     </div>
+     <div class="galery__item">
+      <a href="catalog.html" class="galery__link">
+       <img class="galery__img" src="images/galery2.jpg" alt="картинка 2" />
+       <h3 class="galery__title">Цветочная весна</h3>
+       <p class="galery__text">
+        Добавьте жизни в ваш интерьер с помощью цветов
+       </p>
+      </a>
+     </div>
+     <div class="galery__item">
+      <a href="catalog.html" class="galery__link">
+       <img class="galery__img" src="images/galery3.jpg" alt="картинка 3" />
+       <h3 class="galery__title">Синие обои</h3>
+       <p class="galery__text">
+        От мягкого, небесно-голубого до насёщенного морского
+       </p>
+      </a>
+     </div>
+    </div>
+    <h3 class="home-title">Скоро в продаже</h3>
+   </div>
+   <div class="galery-bg">
+    <div class="container">
+     
+     <div class="galery-bg__content bg-content">
+      <h3 class="galery-bg__title">Коллекция Giorno Javana</h3>
+      <a href="product.html" class="galery-bg__link  main-btn">Заказать</a>
+     </div>
+    </div>
+
+
+   </div>
+  </section> 
+
+
+   <section class="new">
+
+   <div class="container">
+    <h3 class="home-title">Новинки магазина</h3>
+    <div class="new__inner">
+     <div class="new__item">
+      <a class="new__link" href="page404.html">
+        <img class="new__img" src="images/new-img.jpg" alt="new foto" />
+        <div class="new__overlay"></div>
+       <div class="new__details">
+        <h3 class="new__item__title new__item__title-big">
+         Супер пупер обои
+        </h3>
+        <p class="new__item__text">Коллекция: Wild plants</p>
+       </div>
+      </a>
+     </div>
+
+     <div class="new__item">
+      <a class="new__link" href="page404.html">
+        <img class="new__img" src="images/new-img2.jpg" alt="new foto" />
+        <div class="new__overlay"></div>
+       <div class="new__details">
+        <h3 class="new__item__title">Супер пупер обои</h3>
+        <p class="new__item__text-small">Коллекция: Wild plants</p>
+       </div>
+      </a>
+     </div>
+     <div class="new__item">
+      <a class="new__link" href="page404.html">
+       <div class="new__overlay"></div>
+       <img class="new__img" src="images/new-img3.jpg" alt="new foto" />
+       <div class="new__details">
+        <h3 class="new__item__title">Супер пупер обои</h3>
+        <p class="new__item__text-small">Коллекция: Wild plants</p>
+       </div>
+      </a>
+     </div>
+
+     <div class="new__item">
+      <a class="new__link" href="page404.html">
+       <div class="new__overlay"></div>
+       <img class="new__img" src="images/new-img4.jpg" alt="new foto" />
+       <div class="new__details">
+        <h3 class="new__item__title">Супер пупер обои</h3>
+        <p class="new__item__text-small">Коллекция: Wild plants</p>
+       </div>
+      </a>
+     </div>
+     <div class="new__item">
+      <a class="new__link" href="page404.html">
+       <div class="new__overlay"></div>
+       <img class="new__img" src="images/new-img6.jpg" alt="new foto" />
+       <div class="new__details">
+        <h3 class="new__item__title">Супер пупер обои</h3>
+        <p class="new__item__text-small">Коллекция: Wild plants</p>
+       </div>
+      </a>
+     </div>
+     <div class="new__item">
+      <a class="new__link" href="page404.html">
+       <div class="new__overlay"></div>
+       <img class="new__img" src="images/new-img7.jpg" alt="new foto" />
+       <div class="new__details">
+        <h3 class="new__item__title">Супер пупер обои</h3>
+        <p class="new__item__text-small">Коллекция: Wild plants</p>
+       </div>
+      </a>
+     </div>
+     <div class="new__item__btn">
+       <a class="new__btn-link main-btn" href="page404.html"> Каталог </a>
+
+     </div>
+    </div>
+   </div>
+  </section>   
+
+    <section class="special">
+      <div class="container">
+        <h3 class="home-title">Популярные товары</h3>
+
+        <div class="special-slider">
+          <div class="special-slider__wrapper">
+            <div class="slide">
+              <div class="recomend__wrap">
+                <button class="wishlist__btn wishlist__item">
+                  <i class="icon-star"></i>
+                </button>
+                
+                <a href="product.html" class="special-slider__link">
+                  <img src="images/home-recomend/hr1.jpg" alt="special foto" class="recomend__img">
+                </a>
+                <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                <div class="recomend__box">
+                  <div class="recomend__price">
+                    <div class="recomend__price__new">2000 ₽</div>
+                    <div class="recomend__price__old">2300 ₽</div>
+                  </div>
+                </div>
+                <div class="badge__box">
+                  <div class="badge badge__saler">
+                    <i class="icon-first"></i>
+                    <p class="badge__text">лидер продаж</p>
+                  </div>
+
+                </div>
+              
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="recomend__wrap">
+                <button class="wishlist__btn wishlist__item">
+                  <i class="icon-star"></i>
+                </button>
+                
+                <a href="product.html" class="special-slider__link">
+                  <img src="images/home-recomend/hr2.jpg" alt="special foto" class="recomend__img">
+                </a>
+                <p class="recomend__text">
+                  Супер пупер навороченные обои с краивыми ...
+                </p>
+                <div class="recomend__box">
+                  <div class="recomend__price">
+                    <div class="recomend__price__new">1700 ₽</div>
+                    <div class="recomend__price__old">2000 ₽</div>
+                  </div>
+                </div>
+                <div class="badge__box">
+                  <div class="badge badge__saler">
+                    <i class="icon-first"></i>
+                    <p class="badge__text">лидер продаж</p>
+                  </div>
+                  <div class="badge badge__ship">
+                    <i class="icon-box"></i>
+                    <p class="badge__text">бесплатная доставка</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="recomend__wrap">
+                <button class="wishlist__btn wishlist__item">
+                  <i class="icon-star"></i>
+                </button>
+                <a href="product.html" class="special-slider__link">
+                  <img src="images/home-recomend/hr3.jpg" alt="special foto" class="recomend__img">
+                </a>
+                <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                <div class="recomend__box">
+                  <div class="recomend__price">
+                    <div class="recomend__price__new">2500 ₽</div>
+                    <div class="recomend__price__old">2800 ₽</div>
+                  </div>
+                </div>
+                <div class="badge__box">
+                  <div class="badge badge__saler">
+                    <i class="icon-first"></i>
+                    <p class="badge__text">лидер продаж</p>
+                  </div>
+                  <div class="badge badge__ship">
+                    <i class="icon-box"></i>
+                    <p class="badge__text">бесплатная доставка</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="recomend__wrap">
+                <button class="wishlist__btn wishlist__item">
+                  <i class="icon-star"></i>
+                </button>
+                <a href="product.html" class="special-slider__link">
+                  <img src="images/home-recomend/hr4.jpg" alt="special foto" class="recomend__img">
+                </a>
+                <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                <div class="recomend__box">
+                  <div class="recomend__price">
+                    <div class="recomend__price__new">1500 ₽</div>
+                  </div>
+                </div>
+                <div class="badge__box">
+                  <div class="badge badge__saler">
+                    <i class="icon-first"></i>
+                    <p class="badge__text">лидер продаж</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="recomend__wrap">
+                <button class="wishlist__btn wishlist__item">
+                  <i class="icon-star"></i>
+                </button>
+                <a href="product.html" class="special-slider__link">
+                  <img src="images/home-recomend/hr5.jpg" alt="special foto" class="recomend__img">
+                </a>
+                <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                <div class="recomend__box">
+                  <div class="recomend__price">
+                    <div class="recomend__price__new">2400 ₽</div>
+
+                  </div>
+                </div>
+                <div class="badge__box">
+                  <div class="badge badge__saler">
+                    <i class="icon-first"></i>
+                    <p class="badge__text">лидер продаж</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="recomend__wrap">
+                <button class="wishlist__btn wishlist__item">
+                  <i class="icon-star"></i>
+                </button>
+                <a href="product.html" class="special-slider__link">
+                  <img src="images/home-recomend/hr6.jpg" alt="special foto" class="recomend__img">
+                </a>
+                <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                <div class="recomend__box">
+                  <div class="recomend__price">
+                    <div class="recomend__price__new">2600 ₽</div>
+                    <div class="recomend__price__old">2900 ₽</div>
+                  </div>
+                </div>
+                <div class="badge__box">
+                  <div class="badge badge__saler">
+                    <i class="icon-first"></i>
+                    <p class="badge__text">лидер продаж</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="recomend__wrap">
+                <button class="wishlist__btn wishlist__item">
+                  <i class="icon-star"></i>
+                </button>
+                <a href="product.html" class="special-slider__link">
+                  <img src="images/home-recomend/hr7.jpg" alt="special foto" class="recomend__img">
+                </a>
+                <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                <div class="recomend__box">
+                  <div class="recomend__price">
+                    <div class="recomend__price__new">1400 ₽</div>
+                    <div class="recomend__price__old">1500 ₽</div>
+                  </div>
+                </div>
+                <div class="badge__box">
+                  <div class="badge badge__saler">
+                    <i class="icon-first"></i>
+                    <p class="badge__text">лидер продаж</p>
+                  </div>
+                  <div class="badge badge__ship">
+                    <i class="icon-box"></i>
+                    <p class="badge__text">бесплатная доставка</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="recomend__wrap">
+                <button class="wishlist__btn wishlist__item">
+                  <i class="icon-star"></i>
+                </button>
+                <a href="product.html" class="special-slider__link">
+                  <img src="images/home-recomend/hr8.jpg" alt="special foto" class="recomend__img">
+                </a>
+                <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                <div class="recomend__box">
+                  <div class="recomend__price">
+                    <div class="recomend__price__new">2300 ₽</div>
+                    <div class="recomend__price__old">2500 ₽</div>
+                  </div>
+                </div>
+                <div class="badge__box">
+                  <div class="badge badge__saler">
+                    <i class="icon-first"></i>
+                    <p class="badge__text">лидер продаж</p>
+                  </div>
+                  <div class="badge badge__ship">
+                    <i class="icon-box"></i>
+                    <p class="badge__text">бесплатная доставка</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="special__swiper-pagination"></div>
+        </div>
+        <div class="bg-wave">
+          <img src="images/wave-footer.svg" alt=" bg wave" />
+        </div>
+    </section>
+
+
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <h4 class="footer__title">
+        Хотите получить уведомление о скидке и новой коллекции?
+      </h4>
+      <div class="footer__subscribe">
+        <form class="footer__form" action="#">
+          <input class="footer__input" type="text" placeholder="Ваш email" />
+          <button class="footer__btn">Подписаться</button>
+        </form>
+      </div>
+      <div class="footer__content">
+        <div class="footer__nav">
+          <h4 class="footer__nav__title">О компании</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="page404.html">Вакансии</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="page404.html">Шоурум</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="page404.html">Как сделать заказ</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="page404.html">Пользовательское соглашение</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h4 class="footer__nav__title">Каталог</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="page404.html">Акции</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="page404.html">Распродажа</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="page404.html">Доставка</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="page404.html">Оплата</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4 class="footer__nav__title">Контакты</h4>
+          <a class="footer__adress" href="#">г.Санкт-Петергбург Лиговский пр-т 75</a>
+          <a class="footer__email" href="mailto:Dejavugit@gmail.com">Dejavugit@gmail.com</a>
+          <a class="footer__phone" href="tel:+79533629737">+7-953-362-97-37</a>
+        </div>
+        <div class="footer__nav">
+          <a class="footer__logo" href="#">
+            <img src="images/footer-logo.png" alt="логотип футтера" />
+          </a>
+        </div>
+      </div>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#" class="social__link-icon"><i class="icon-pinterest"></i></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link-icon"><i class="icon-instagram"></i></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link-icon"><i class="icon-telegram"></i></a>
+        </li>
+        <li class="social__item">
+          <a href="https://vk.com/alex_voituk" class="social__link-icon"><i class="icon-vk"></i></a>
+        </li>
+      </ul>
+      <div class="footer__bot">
+        <p class="footer__copy">© 2021.All Rights Reserved.</p>
+        <div class="footer__accept">
+          <p class="footer__accept-text">Мы принимаем:</p>
+          <img src="images/accept.png" alt="accept-img" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
 </body>
+
+
 
 </html>

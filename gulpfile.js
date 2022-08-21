@@ -1,12 +1,14 @@
 const { src, dest, watch, parallel, series } = require('gulp');
 
 const scss =          require('gulp-sass');
-const concat =        require('gulp-concat');
 const autoprefixer =  require('gulp-autoprefixer');
-const uglify =        require('gulp-uglify');
-const imagemin =      require('gulp-imagemin');
 const del =           require('del');
 const browserSync =   require('browser-sync').create();
+
+
+const concat =        require('gulp-concat');
+const uglify =        require('gulp-uglify');
+const imagemin =      require('gulp-imagemin');
 
 
 function browsersync() {
@@ -24,7 +26,7 @@ function styles (){
     .pipe(scss({outputStyle: 'compressed'}))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
-        overrideBrowserslist:  ['last 7 versions'],
+        overrideBrowserslist:  ['last 5 versions'],
         grid: true
     }))
     .pipe(dest('app/css'))
@@ -35,6 +37,10 @@ function styles (){
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
+       
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+        'node_modules/swiper/swiper-bundle.js',
+        'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
         'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -63,7 +69,8 @@ function build() {
     return src([
         'app/**/*.html',
         'app/css/style.min.css',
-        'app/js/main.min.js'
+        'app/js/main.min.js',
+        'app/fonts/**/**'
     ], {base: 'app'})
     .pipe(dest('dist'))
 }
