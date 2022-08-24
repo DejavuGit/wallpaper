@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wallpeper from Fedor</title>
+  <link rel="stylesheet" href="fonts/fontsIcons/IconsFonts.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+   <header class="header">
+		<div class="container header-container">
+				<div class="header__wrap">
+						<a href="index.html" class="logo">
+								<img src="images/logo-mini.png" alt="logo img" class="logo__png" />
+						</a>
+
+						<nav class="menu">
+								<input class="menu__checkbox" id="checkbox" type="checkbox">
+								<label for="checkbox" class="menu__btn">
+								<div class="menu__icon"></div>
+								</label>
+								<div class="menu__container">
+										<ul class="menu__list">
+												<li><a href="index.html" class="menu__link">Главная</a></li>
+												<li class="dropdown">
+														<a href="catalog.html" class="menu__link ">Каталог</a>
+														<ul class="dropdown__menu">
+																<li><a href="catalog.html" class="dropdown__link">Ар-деко</a></li>
+																<li><a href="catalog.html" class="dropdown__link">Флора и фауна</a></li>
+																<li><a href="catalog.html" class="dropdown__link">Город</a></li>
+																<li><a href="catalog.html" class="dropdown__link">Звёзды</a></li>
+														</ul>
+												</li>
+                       
+												<li><a href="product.html" class="menu__link  menu__link--active ">Товар</a></li>
+												<li><a href="blog.html" class="menu__link ">Блог</a></li>
+												<li><a href="regist.html" class="menu__link">Login</a></li>
+										</ul>
+								</div>
+
+								
+						</nav>
+
+						<ul class="user__list">
+								
+								<li class="user__item">
+										<a href="#" class="user__link">
+												<i class="icon-star">
+														<span class="user__num">8</span>
+												</i>
+												<p class="user__text">закладки</p>
+										</a>
+								</li>
+								<li class="user__item">
+										<a href="#" class="user__link">
+												<i class="icon-cart">
+														<span class="user__num">3</span>
+												</i>
+												<p class="user__text">корзина</p>
+										</a>
+								</li>
+						</ul>
+				</div>
+		</div>
+</header> 
+
+
+  <main class="main">
+    <section class="product">
+      <div class="container">
+         <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#"> Главная </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#"> Каталог </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#"> Природа </a>
+            </li>
+          </ul>
+        </div> 
+
+      
+
+         <div class="product__wrap">
+
+          <div class="slider-item">
+            <div class="item-slider__wrapper">
+  
+              <div class="slide">
+                <img src="images/product-img1.png" alt="swiper pic" class="swiper-img"> 
+              </div>
+              <div class="slide">
+                <img src="images/product-img2.jpg" alt="swiper pic" class="swiper-img">
+                
+              </div>
+              <div class="slide">
+                <img src="images/product-img3.jpg" alt="swiper pic" class="swiper-img">
+                
+              </div>
+              <div class="slide">
+                <img src="images/product-img4.jpg" alt="swiper pic" class="swiper-img">
+               
+              </div>
+             
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev">
+              <i class="icon-ar-l"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="icon-ar-r"></i>
+            </div>
+          </div>
+          
+
+
+
+
+          
+            <div class="product__info">
+            <div class="saller">
+              <a href="#" class="saller__name">WallfloraShop</a>
+              <div class="saller__box">
+                <p class="saller__quality">4 759 продаж</p>
+                <div class="saller__stars">
+                  <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i
+                    class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+            <h2 class="product__name">
+              Тропические, бнановые листья, Экзотические джунгли, Банановый лес
+            </h2>
+
+            <div class="product__price">
+              <div class="product__price__box">
+                <p class="product__price__new">2075 ₽</p>
+                <p class="product__price__old">2500 ₽ </p>
+              </div>
+              <p class="product__price__in-stock">В наличии</p>
+            </div>
+
+
+            <div class="badge__box badge__box-top">
+              <div class="badge badge__saler">
+                <i class="icon-first"></i>
+                <p class="badge__text">лидер продаж</p>
+              </div>
+              <div class="badge badge__ship">
+                <i class="icon-box"></i>
+                <p class="badge__text">бесплатная доставка</p>
+              </div>
+            </div>
+
+            <form action="" class="product-form">
+              <h4 class="product-form__item-label">Материал</h4>
+              <select class="product-form__item-select" name="wall-width">
+                <option value="">Выберите вариант</option>
+                <option value="">бумажные (2075 RU)</option>
+                <option value="">флизелиновые (2075 RU - 4150 RU)</option>
+                <option value="">тканевые (4150 RU - 6225 RU)</option>
+                <option value="">обои из стекловолокна(6225 RU - 8300 RU)</option>
+              </select>
+              <h4 class="product-form__item-label">Размер</h4>
+              <select class="product-form__item-select" name="wall-hight">
+                <option value="">Выберите вариант</option>
+                <option value="">(3м x 2м) (2075 RU)</option>
+                <option value="">(4м х 3м) (2075 RU - 4150 RU)</option>
+                <option value="">(5м х 4м) (4150 RU - 6225 RU)</option>
+                <option value="">(5м х 6м) (6225 RU - 8300 RU)</option>
+                <option value="">(>6м) ( от 12 000 RU )</option>
+              </select>
+              <h4 class="product-form__item-label">
+                Количество</h4>
+              <select class="product-form__item-select" name="">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+              </select>
+
+
+            </form>
+            <button class="product-btn btn-buy">Купить сейчас</button>
+            <button class="product-btn add-cart">Добавить в корзину</button>
+
+
+            <div class="product-arrives">
+              <img class="product-arrives__img" src="images/ship.svg" alt="arrives-icon">
+              <p class="product-arrives__text"> Доставим <div id="dataAlerted"></div> если закажите сегодня</p>
+            </div>
+
+            <div class="accordions">
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  <h4 class="accordion__title">Характеристики</h4>
+                  <span class="accordion__icon">
+                    <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 22L1.39788e-06 -1.09524e-06L13 13.8306L26 -1.09524e-06L13 22Z" fill="#33478F" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="accordion__content">
+                  <table class="properti">
+                    <tr>
+                      <th>Цвет:</th>
+                      <td>зеленый, белый</td>
+                    </tr>
+                    <tr>
+                      <th>Длина рулона (м):</th>
+                      <td>5,5</td>
+                    </tr>
+                    <tr>
+                      <th>Ширина рулона (м):</th>
+                      <td>1,06</td>
+                    </tr>
+                    <tr>
+                      <th>Основа:</th>
+                      <td>флизелин</td>
+                    </tr>
+                    <tr>
+                      <th>Покрытие:</th>
+                      <td>виниловое</td>
+                    </tr>
+                    <tr>
+                      <th>Страна:</th>
+                      <td>Швеция</td>
+                    </tr>
+                    <tr>
+                      <th>Производитель:</th>
+                      <td>Borastaper</td>
+                    </tr>
+                    <tr>
+                      <th>Коллекция:</th>
+                      <td>Tropical</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  <h4 class="accordion__title">Доставка</h4>
+                  <span class="accordion__icon">
+                    <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 22L1.39788e-06 -1.09524e-06L13 13.8306L26 -1.09524e-06L13 22Z" fill="#33478F" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="accordion__content">
+                  <p class="accordion__content__text">Сроки доставки:</p>
+                  <h4 class="accordion__content__title">7 - 14 рабочих дней</h4>
+                  <p class="accordion__content__text">Стоимость доставки:</p>
+                  <h4 class="accordion__content__title">500 RU</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>  
+            <div class="product__review--wrap">
+            <div class="product__review">
+              <h4 class="product__review__title">1562 отзыва</h4>
+              <div class="product__review__star">
+                <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i
+                  class="icon-star"></i>
+              </div>
+            </div>
+            <div class="tabs">
+              <div class="tabs__top">
+                <a href="#tab-3" class="tabs__top__item tabs__top__item">
+                  отзывов этого товара<span>17</span>
+                </a>
+                <a href="#tab-1" class="tabs__top__item tabs__top__item--active">
+                  отзывов магазина<span>1562</span>
+                </a>
+                <a href="#tab-2" class="tabs__top__item" style="font-size: 24px;font-weight:700;"> Оставить отзыв </a>
+              </div>
+              <div class="tabs__content">
+                <div class="tabs__content__item tabs__content__item" id="tab-3">
+                  <div class="comment__item">
+                    <div class="comment__wrap">
+                      <div class="comment__box">
+                        <div class="comment__header">
+                          <img src="images/user-avatar.png" alt="user-avatar" class="user__avatar">
+                          <a class="user__name" href="#">Шрек</a>
+                          <p class="comment__date"> 24 апр 2021 г</p>
+                        </div>
+                        <div class="comment__star"><i class="icon-star"></i><i class="icon-star"></i><i
+                            class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
+                        <p class="comment">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                          тексты. Своих щеке она вдали свой предложения, дорогу единственное океана злых маленькая
+                          залетают букв выйти свою коварный инициал мир встретил наш путь всеми, назад последний
+                          буквоград алфавит он предупредила. Они ты вдали раз моей даже ipsum предупреждал рыбного меня
+                          обеспечивает великий!
+                        </p>
+                      </div>
+                      <img src="images/user-pic1.jpg" alt="" class="comment__user-pic">
+                    </div>
+                  </div>
+                  <div class="comment__item">
+                    <div class="comment__wrap">
+                      <div class="comment__box">
+                        <div class="comment__header">
+                          <img src="images/robokop.jpg" alt="user-avatar" class="user__avatar">
+                          <a class="user__name" href="#">Робокоп</a>
+                          <p class="comment__date"> 20 март 2021 г</p>
+                        </div>
+                        <div class="comment__star"><i class="icon-star"></i><i class="icon-star"></i><i
+                            class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
+                        <p class="comment">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                          тексты. Вопроса единственное проектах взгляд, большого, рукописи своих составитель, запятых
+                          рукопись текст на берегу грамматики букв однажды.
+                        </p>
+                      </div>
+                      <img src="images/user-pic2.jpg" alt="" class="comment__user-pic">
+                    </div>
+                  </div>
+                  <div class="comment__item">
+                    <div class="comment__wrap">
+                      <div class="comment__box">
+                        <div class="comment__header">
+                          <img src="images/saitama.jpg" alt="user-avatar" class="user__avatar">
+                          <a class="user__name" href="#">Сайтама</a>
+                          <p class="comment__date"> 15 янв 2021 г</p>
+                        </div>
+                        <div class="comment__star"><i class="icon-star"></i><i class="icon-star"></i><i
+                            class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
+                        <p class="comment">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                          тексты. Его заглавных курсивных вскоре языкового на берегу переулка журчит злых вдали
+                          буквенных себя коварных взобравшись толку жизни семь, страну силуэт наш? Заманивший переписали
+                          парадигматическая прямо свой текстов продолжил города океана что.
+                        </p>
+                      </div>
+                      <img src="images/user-pic3.jpg" alt="" class="comment__user-pic">
+                    </div>
+                  </div>
+                  <div class="comment-pagination">
+                    <ul class="comment-pagination__list">
+                      <li class="comment-pagination__item comment-pagination__arrow">
+                        <a href="#" class="comment-pagination__link ">
+                          <i class="icon-ar-l"></i>
+                        </a>
+                      </li>
+                      <li class="comment-pagination__item">
+                        <a href="#" class="comment-pagination__link">1</a>
+                      </li>
+                      <li class="comment-pagination__item">
+                        <a href="#" class="comment-pagination__link">2</a>
+                      </li>
+                      <li class="comment-pagination__item">
+                        <a href="#" class="comment-pagination__link">...</a>
+                      </li>
+                      <li class="comment-pagination__item">
+                        <a href="#" class="comment-pagination__link">6</a>
+                      </li>
+                      <li class="comment-pagination__item comment-pagination__arrow">
+                        <a href="#" class="comment-pagination__link "><i class="icon-ar-r"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tabs__content__item tabs__content__item--active" id="tab-1">
+                  <div class="comment__item">
+                    <div class="comment__wrap">
+                      <div class="comment__box">
+                        <div class="comment__header">
+                          <img src="images/kianu.jpg" alt="user-avatar" class="user__avatar">
+                          <a class="user__name" href="#">Киану Ривз</a>
+                          <p class="comment__date"> 15 фев 2021 г</p>
+                        </div>
+                        <div class="comment__star"><i class="icon-star"></i><i class="icon-star"></i><i
+                            class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
+                        <p class="comment">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные
+                          тексты. Ведущими пояс послушавшись эта реторический образ однажды пунктуация путь коварных
+                          толку страна переписывается за курсивных вопроса до обеспечивает большого от всех инициал
+                          маленькая злых, рыбными букв. Домах, коварный.
+                        </p>
+                      </div>
+                      <img src="images/user-pic4.jpg" alt="" class="comment__user-pic">
+                    </div>
+                  </div>
+                  <div class="comment__item">
+                    <div class="comment__wrap">
+                      <div class="comment__box">
+                        <div class="comment__header">
+                          <img src="images/towel.jpg" alt="user-avatar" class="user__avatar">
+                          <a class="user__name" href="#">Полотенчик</a>
+                          <p class="comment__date"> 27 фев 2021 г</p>
+                        </div>
+                        <div class="comment__star"><i class="icon-star"></i><i class="icon-star"></i><i
+                            class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
+                        <p class="comment">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                          тексты. Правилами они однажды подзаголовок агентство если повстречался это предупредила
+                          заглавных, продолжил толку о до скатился встретил наш. Свое мир большой наш сих своих.
+                        </p>
+                      </div>
+                      <img src="images/user-pic.jpg" alt="" class="comment__user-pic">
+                    </div>
+                  </div>
+                  <div class="comment__item">
+                    <div class="comment__wrap">
+                      <div class="comment__box">
+                        <div class="comment__header">
+                          <img src="images/fish.jpg" alt="user-avatar" class="user__avatar">
+                          <a class="user__name" href="#">Русалочка</a>
+                          <p class="comment__date"> 24 янв 2021 г</p>
+                        </div>
+                        <div class="comment__star"><i class="icon-star"></i><i class="icon-star"></i><i
+                            class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
+                        <p class="comment">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                          тексты. Если родного, семантика вскоре речью дал страна правилами имени продолжил. Наш
+                          проектах снова он взобравшись все! Назад.
+                        </p>
+                      </div>
+                      <img src="images/user-pic7.jpg" alt="" class="comment__user-pic">
+                    </div>
+                  </div>
+                  <div class="comment-pagination">
+                    <ul class="comment-pagination__list">
+                      <li class="comment-pagination__item comment-pagination__arrow">
+                        <a href="#" class="comment-pagination__link ">
+                          <i class="icon-ar-l"></i>
+                        </a>
+                      </li>
+                      <li class="comment-pagination__item">
+                        <a href="#" class="comment-pagination__link">1</a>
+                      </li>
+                      <li class="comment-pagination__item">
+                        <a href="#" class="comment-pagination__link">2</a>
+                      </li>
+                      <li class="comment-pagination__item">
+                        <a href="#" class="comment-pagination__link">...</a>
+                      </li>
+                      <li class="comment-pagination__item">
+                        <a href="#" class="comment-pagination__link">521</a>
+                      </li>
+                      <li class="comment-pagination__item comment-pagination__arrow">
+                        <a href="#" class="comment-pagination__link "><i class="icon-ar-r"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tabs__content__item" id="tab-2">
+                  <div class="comment-form__rating" data-total-value="0">
+                    <div class="rating__item" data-item-value="5">★</div>
+                    <div class="rating__item" data-item-value="4">★</div>
+                    <div class="rating__item" data-item-value="3">★</div>
+                    <div class="rating__item" data-item-value="2">★</div>
+                    <div class="rating__item" data-item-value="1">★</div>
+                  </div>
+                  <form class="comment-form">
+                    <div class="comment-form__wrap">
+                      <div class="comment-form__box">
+                        <div class="comment-form__inputs">
+                          <input type="text" class="comment-form__input" placeholder="Ваше имя" />
+                          <input type="text" class="comment-form__input" placeholder="Ваш email" />
+                        </div>
+                        <textarea class="comment-form__textarea" placeholder="Ваш комментарий"></textarea>
+                      </div>
+                      <div class="comment-form__group-file">
+                        <label class="comment-form__label">
+                          <i class="icon-picture"></i>
+                          <p class="comment-form__text">Выберите файл</p>
+                          <input type="file" class="comment-form__img">
+                        </label>
+                      </div>
+                    </div>
+                    <button class="comment-form__btn">отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div> 
+    </section>
+
+
+      <section class="review-foto">
+      <div class="container">
+
+
+
+
+
+         <div class="review-foto__slider">
+
+           <div class="review-foto__top">
+            <h4 class="review-foto__tilte">Фотографии покупателей</h4>
+            <div class="review-foto__buttons">
+              <div class="swiper-button-prev review-foto__ar-l">
+                <i class="icon-ar-l"></i>
+              </div>
+              <div class="swiper-button-next review-foto__ar-r">
+                <i class="icon-ar-r"></i>
+              </div>
+            </div>
+
+          </div> 
+           <div class="review-foto__wrapper">
+            <div class="slide">
+              <img src="images/foto-review/user-pic8.jpg" alt="user photo-revie" class="foto-review__img">
+            </div>
+            <div class="slide">
+              <img src="images/foto-review/user-pic7.jpg" alt="user photo-revie" class="foto-review__img">
+            </div>
+         
+            <div class="slide">
+              <img src="images/foto-review/user-pic5.jpg" alt="user photo-revie" class="foto-review__img">
+            </div>
+            <div class="slide">
+              <img src="images/foto-review/user-pic4.jpg" alt="user photo-revie" class="foto-review__img">
+            </div>
+           
+            <div class="slide">
+              <img src="images/foto-review/user-pic2.jpg" alt="user photo-revie" class="foto-review__img">
+            </div>
+            <div class="slide">
+              <img src="images/foto-review/user-pic1.jpg" alt="user photo-revie" class="foto-review__img">
+            </div>
+          </div> 
+        </div> 
+
+
+
+         <div class="bg-wave">
+          <img src="images/wave-recomend.png" alt=" bg wave">
+        </div>
+    </section>   
+
+
+
+      <section class="product-galery">
+      <div class="container">
+        <div class="recomend">
+          <div class="recomend__left">
+            <div class="recomend__header">
+              <h4 class="recomend__title">Больше товаров этого продавца</h4>
+              <a href="#" class="recomend__btn">Показать больше</a>
+            </div>
+            <ul class="recomend__list">
+
+              <li class="recomend__item">
+                <div class="recomend__wrap">
+                  <button class="wishlist__btn wishlist__item">
+                    <i class="icon-star"></i>
+                  </button>
+                  <img src="images/recomend-1.jpg" alt="special foto" class="recomend__img">
+                  <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                  <div class="recomend__box">
+                    <div class="recomend__price">
+                      <div class="recomend__price__new">2400 ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="recomend__item">
+                <div class="recomend__wrap">
+                  <button class="wishlist__btn wishlist__item">
+                    <i class="icon-star"></i>
+                  </button>
+                  <img src="images/recomend-2.jpg" alt="special foto" class="recomend__img">
+                  <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                  <div class="recomend__box">
+                    <div class="recomend__price">
+                      <div class="recomend__price__new">2000 ₽</div>
+                      <div class="recomend__price__old">2250 ₽</div>
+                    </div>
+                  </div>
+                  <div class="badge__box">
+                    <div class="badge badge__saler">
+                      <i class="icon-first"></i>
+                      <p class="badge__text">лидер продаж</p>
+                    </div>
+                    <div class="badge badge__ship">
+                      <i class="icon-box"></i>
+                      <p class="badge__text">бесплатная доставка</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="recomend__item">
+                <div class="recomend__wrap">
+                  <button class="wishlist__btn wishlist__item">
+                    <i class="icon-star"></i>
+                  </button>
+                  <img src="images/recomend-3.jpg" alt="special foto" class="recomend__img">
+                  <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                  <div class="recomend__box">
+                    <div class="recomend__price">
+                      <div class="recomend__price__new">1800 ₽</div>
+                      <div class="recomend__price__old">2150 ₽</div>
+                    </div>
+                  </div>
+                  <div class="badge__box">
+                    <div class="badge badge__ship">
+                      <i class="icon-box"></i>
+                      <p class="badge__text">бесплатная доставка</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="recomend__item">
+                <div class="recomend__wrap">
+                  <button class="wishlist__btn wishlist__item">
+                    <i class="icon-star"></i>
+                  </button>
+                  <img src="images/recomend-4.jpg" alt="special foto" class="recomend__img">
+                  <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                  <div class="recomend__box">
+                    <div class="recomend__price">
+                      <div class="recomend__price__new">2700 ₽</div>
+                    </div>
+                  </div>
+                  <div class="badge__box">
+                    <div class="badge badge__saler">
+                      <i class="icon-first"></i>
+                      <p class="badge__text">лидер продаж</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <div class="recomend__right">
+            <div class="recomend__header">
+              <h4 class="recomend__title">Похожие товары</h4>
+              <a href="#" class="recomend__btn">Показать больше</a>
+            </div>
+            <ul class="recomend__list">
+
+              <li class="recomend__item">
+                <div class="recomend__wrap">
+                  <button class="wishlist__btn wishlist__item">
+                    <i class="icon-star"></i>
+                  </button>
+                  <img src="images/recomend-5.jpg" alt="special foto" class="recomend__img">
+                  <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                  <div class="recomend__box">
+                    <div class="recomend__price">
+                      <div class="recomend__price__new">2450 ₽</div>
+                      <div class="recomend__price__old">2800 ₽</div>
+                    </div>
+                  </div>
+                  <div class="badge__box">
+                    <div class="badge badge__saler">
+                      <i class="icon-first"></i>
+                      <p class="badge__text">лидер продаж</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="recomend__item">
+                <div class="recomend__wrap">
+                  <button class="wishlist__btn wishlist__item">
+                    <i class="icon-star"></i>
+                  </button>
+                  <img src="images/recomend-6.jpg" alt="special foto" class="recomend__img">
+                  <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                  <div class="recomend__box">
+                    <div class="recomend__price">
+                      <div class="recomend__price__new">2600 ₽</div>
+                    </div>
+                  </div>
+                  <div class="badge__box">
+                    <div class="badge badge__ship">
+                      <i class="icon-box"></i>
+                      <p class="badge__text">бесплатная доставка</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="recomend__item">
+                <div class="recomend__wrap">
+                  <button class="wishlist__btn wishlist__item">
+                    <i class="icon-star"></i>
+                  </button>
+                  <img src="images/recomend-7.jpg" alt="special foto" class="recomend__img">
+                  <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                  <div class="recomend__box">
+                    <div class="recomend__price">
+                      <div class="recomend__price__new">2250 ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="recomend__item">
+                <div class="recomend__wrap">
+                  <button class="wishlist__btn wishlist__item">
+                    <i class="icon-star"></i>
+                  </button>
+                  <img src="images/recomend-8.jpg" alt="special foto" class="recomend__img">
+                  <p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+                  <div class="recomend__box">
+                    <div class="recomend__price">
+                      <div class="recomend__price__new">2300 ₽</div>
+                      <div class="recomend__price__old">2600 ₽</div>
+                    </div>
+                  </div>
+                  <div class="badge__box">
+                    <div class="badge badge__saler">
+                      <i class="icon-first"></i>
+                      <p class="badge__text">лидер продаж</p>
+                    </div>
+                    <div class="badge badge__ship">
+                      <i class="icon-box"></i>
+                      <p class="badge__text">бесплатная доставка</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="bg-wave">
+        <img src="images/wave-footer.svg" alt=" bg wave" />
+      </div>
+    </section>  
+
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <h4 class="footer__title">
+        Хотите получить уведомление о скидке и новой коллекции?
+      </h4>
+      <div class="footer__subscribe">
+        <form class="footer__form" action="#">
+          <input class="footer__input" type="text" placeholder="Ваш email" />
+          <button class="footer__btn">Подписаться</button>
+        </form>
+      </div>
+      <div class="footer__content">
+        <div class="footer__nav">
+          <h4 class="footer__nav__title">О компании</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Вакансии</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Шоурум</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Как сделать заказ</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Пользовательское соглашение</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h4 class="footer__nav__title">Каталог</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Акции</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Распродажа</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Доставка</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Оплата</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4 class="footer__nav__title">Контакты</h4>
+          <a class="footer__adress" href="#">г.Санкт-Петергбург Лиговский пр-т 75</a>
+          <a class="footer__email" href="mailto:Dejavugit@gmail.com">Dejavugit@gmail.com</a>
+          <a class="footer__phone" href="tel:+79533629737">+7-953-362-97-37</a>
+        </div>
+        <div class="footer__nav">
+          <a class="footer__logo" href="#">
+            <img src="images/footer-logo.png" alt="логотип футтера" />
+          </a>
+        </div>
+      </div>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#" class="social__link-icon"><i class="icon-pinterest"></i></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link-icon"><i class="icon-instagram"></i></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link-icon"><i class="icon-telegram"></i></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link-icon"><i class="icon-vk"></i></a>
+        </li>
+      </ul>
+      <div class="footer__bot">
+        <p class="footer__copy">© 2021.All Rights Reserved.</p>
+        <div class="footer__accept">
+          <p class="footer__accept-text">Мы принимаем:</p>
+          <img src="images/accept.png" alt="accept-img" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+ 
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

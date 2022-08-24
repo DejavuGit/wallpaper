@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Wallpeper from Fedor</title>
+	
+	<link rel="stylesheet" href="fonts/fontsIcons/IconsFonts.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header-container">
+				<div class="header__wrap">
+						<a href="index.html" class="logo">
+								<img src="images/logo-mini.png" alt="logo img" class="logo__png" />
+						</a>
+
+						<nav class="menu">
+								<input class="menu__checkbox" id="checkbox" type="checkbox">
+								<label for="checkbox" class="menu__btn">
+								<div class="menu__icon"></div>
+								</label>
+								<div class="menu__container">
+										<ul class="menu__list">
+												<li><a href="index.html" class="menu__link ">Главная</a></li>
+												<li class="dropdown">
+														<a href="catalog.html" class="menu__link menu__link--active">Каталог</a>
+														<ul class="dropdown__menu">
+																<li><a href="catalog.html" class="dropdown__link">Ар-деко</a></li>
+																<li><a href="catalog.html" class="dropdown__link">Флора и фауна</a></li>
+																<li><a href="catalog.html" class="dropdown__link">Город</a></li>
+																<li><a href="catalog.html" class="dropdown__link">Звёзды</a></li>
+														</ul>
+												</li>
+												<li><a href="product.html" class="menu__link  ">Товар</a></li>
+												<li><a href="blog.html" class="menu__link">Блог</a></li>
+												<li><a href="regist.html" class="menu__link">Login</a></li>
+										</ul>
+								</div>
+
+								
+						</nav>
+
+						<ul class="user__list">
+								
+								<li class="user__item">
+										<a href="#" class="user__link">
+												<i class="icon-star">
+														<span class="user__num">8</span>
+												</i>
+												<p class="user__text">закладки</p>
+										</a>
+								</li>
+								<li class="user__item">
+										<a href="#" class="user__link">
+												<i class="icon-cart">
+														<span class="user__num">3</span>
+												</i>
+												<p class="user__text">корзина</p>
+										</a>
+								</li>
+						</ul>
+				</div>
+		</div>
+</header>
+
+	<main class="main">
+		<section class="catalog">
+			<div class="container">
+			
+
+
+
+				<div class="catalog__inner grid-container">
+
+					<div class="filters__wrapper">
+
+						<div class="filters__btn-wrap">
+							<button class="filters__btn"><span></span></button>
+							<p class="filters__btn__label"> Фильтры</p>
+							
+						</div>
+
+
+
+						<div class="filters">
+							<div class="filter__item filter-price">
+								<h3 class="filter__title">Цена</h3>
+								<input type="text" class="js-range-slider" name="my_range" value="" />
+								
+							</div>
+
+							<div class="filter__item filter-color">
+								<h3 class="filter__title">Цвет</h3>
+								<div class="filter-color__wrap">
+									<label class="check filer-color__check">
+										<input type="checkbox" class="check__input ">
+										<span class="check__box filter-color__box" style="background-color:crimson;"></span>
+									</label>
+									<label class="check filer-color__check">
+										<input type="checkbox" class="check__input">
+										<span class="check__box filter-color__box" style="background-color:yellow;"></span>
+									</label>
+									<label class="check filer-color__check">
+										<input type="checkbox" class="check__input">
+										<span class="check__box filter-color__box" style="background-color:green;"></span>
+									</label>
+									<label class="check filer-color__check">
+										<input type="checkbox" class="check__input">
+										<span class="check__box filter-color__box" style="background-color:blue;"></span>
+									</label>
+									<label class="check filer-color__check">
+										<input type="checkbox" class="check__input">
+										<span class="check__box filter-color__box"
+											style="background-color:rgb(114, 23, 141);"></span>
+									</label>
+									<label class="check filer-color__check">
+										<input type="checkbox" class="check__input">
+										<span class="check__box filter-color__box" style="background-color:white;"></span>
+									</label>
+									<label class="check filer-color__check">
+										<input type="checkbox" class="check__input">
+										<span class="check__box filter-color__box" style="background-color:black;"></span>
+									</label>
+								</div>
+							</div>
+
+							<div class="filter__item">
+								<h3 class="filter__title"> Стиль </h3>
+								<div class="filter-category">
+									<form class="filter-category__form" action="#">
+										<label class="filter-category__label">
+											<input class="filter-category__input" type="checkbox">
+											<div class="filter-category__checkbox">
+												<span>Винтаж</span>
+												<span>24</span>
+											</div>
+										</label>
+										<label class="filter-category__label">
+											<input class="filter-category__input" type="checkbox">
+											<div class="filter-category__checkbox">
+												<span>Ар-деко</span>
+												<span>48</span>
+											</div>
+										</label>
+										<label class="filter-category__label">
+											<input class="filter-category__input" type="checkbox">
+											<div class="filter-category__checkbox">
+												<span>Птицы</span>
+												<span>37</span>
+											</div>
+										</label>
+										<label class="filter-category__label">
+											<input class="filter-category__input" type="checkbox">
+											<div class="filter-category__checkbox">
+												<span>Тропические растения</span>
+												<span>52</span>
+											</div>
+										</label>
+									</form>
+								</div>
+							</div>
+
+							<div class="filter__item filter-collection">
+								<h3 class="filter__title">Коллекция</h3>
+								<div class="filter__wrap">
+									<label class="check filter-place__check">
+										<input type="checkbox" class="check__input">
+										<span class="check__box"></span>
+										Discovery
+									</label>
+									<label class="check">
+										<input type="checkbox" class="check__input">
+										<span class="check__box"></span>
+										Perfecta
+									</label>
+									<label class="check">
+										<input type="checkbox" class="check__input">
+										<span class="check__box"></span>
+										Sydney
+									</label>
+									<label class="check">
+										<input type="checkbox" class="check__input">
+										<span class="check__box"></span>
+										Fine line
+									</label>
+									<label class="check">
+										<input type="checkbox" class="check__input">
+										<span class="check__box"></span>
+										Atmosphere
+									</label>
+								</div>
+							</div>
+
+							<div class="filter__item filter-place">
+								<h3 class="filter__title">Помещение</h3>
+								<div class="filter__wrap">
+									<label class="check filter-place__check">
+										<input type="radio" name="place" class="check__input">
+										<span class="check__box filter-place__box"></span>
+										Гостинная
+									</label>
+									<label class="check">
+										<input type="radio" name="place" class="check__input">
+										<span class="check__box filter-place__box"></span>
+										Спальня
+									</label>
+									<label class="check">
+										<input type="radio" name="place" class="check__input">
+										<span class="check__box filter-place__box"></span>
+										Кухня
+									</label>
+									<label class="check">
+										<input type="radio" name="place" class="check__input">
+										<span class="check__box filter-place__box"></span>
+										Детская
+									</label>
+								</div>
+							</div>
+
+							<button class="apply__btn">Применить</button>
+
+
+							
+
+						</div>
+					</div>
+					
+
+
+					<ul class="product-grid">
+
+
+
+						<li class="recomend__item">
+							<div class="recomend__wrap">
+								<button class="wishlist__btn wishlist__item">
+									<i class="icon-star"></i>
+								</button>
+								<img src="images/catalog/catalog1.jpg" alt="catalog foto" class="recomend__img">
+								<p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+								<div class="recomend__box">
+									<div class="recomend__price">
+										<div class="recomend__price__new">1700 ₽</div>
+										
+									</div>
+								</div>
+								
+							</div>
+						</li>
+						<li class="recomend__item">
+							<div class="recomend__wrap">
+								<button class="wishlist__btn wishlist__item">
+									<i class="icon-star"></i>
+								</button>
+								<img src="images/catalog/catalog2.jpg" alt="special foto" class="recomend__img">
+								<p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+								<div class="recomend__box">
+									<div class="recomend__price">
+										<div class="recomend__price__new">1500 ₽</div>
+										<div class="recomend__price__old">1700 ₽</div>
+										
+									</div>
+								</div>
+								<div class="badge__box">
+									<div class="badge badge__saler">
+										<i class="icon-first"></i>
+										<p class="badge__text">лидер продаж</p>
+									</div>
+									
+								</div>
+							</div>
+						</li>
+						<li class="recomend__item">
+							<div class="recomend__wrap">
+								<button class="wishlist__btn wishlist__item">
+									<i class="icon-star"></i>
+								</button>
+								<img src="images/catalog/catalog3.jpg" alt="special foto" class="recomend__img">
+								<p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+								<div class="recomend__box">
+									<div class="recomend__price">
+										<div class="recomend__price__new">2300 ₽</div>
+										<div class="recomend__price__old">2600 ₽</div>
+									</div>
+								</div>
+								<div class="badge__box">
+									<div class="badge badge__saler">
+										<i class="icon-first"></i>
+										<p class="badge__text">лидер продаж</p>
+									</div>
+									<div class="badge badge__ship">
+										<i class="icon-box"></i>
+										<p class="badge__text">бесплатная доставка</p>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="recomend__item">
+							<div class="recomend__wrap">
+								<button class="wishlist__btn wishlist__item">
+									<i class="icon-star"></i>
+								</button>
+								<img src="images/catalog/catalog4.jpg" alt="special foto" class="recomend__img">
+								<p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+								<div class="recomend__box">
+									<div class="recomend__price">
+										<div class="recomend__price__new">1800 ₽</div>
+										
+									</div>
+								</div>
+								
+							</div>
+						</li>
+						<li class="recomend__item">
+							<div class="recomend__wrap">
+								<button class="wishlist__btn wishlist__item">
+									<i class="icon-star"></i>
+								</button>
+								<img src="images/catalog/catalog5.jpg" alt="special foto" class="recomend__img">
+								<p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+								<div class="recomend__box">
+									<div class="recomend__price">
+										<div class="recomend__price__new">1600 ₽</div>
+									</div>
+								</div>
+								<div class="badge__box">
+									<div class="badge badge__ship">
+										<i class="icon-box"></i>
+										<p class="badge__text">бесплатная доставка</p>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="recomend__item">
+							<div class="recomend__wrap">
+								<button class="wishlist__btn wishlist__item">
+									<i class="icon-star"></i>
+								</button>
+								<img src="images/catalog/catalog6.jpg" alt="special foto" class="recomend__img">
+								<p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+								<div class="recomend__box">
+									<div class="recomend__price">
+										<div class="recomend__price__new">2000 ₽</div>
+										<div class="recomend__price__old">2300 ₽</div>
+									</div>
+								</div>
+								<div class="badge__box">
+									<div class="badge badge__saler">
+										<i class="icon-first"></i>
+										<p class="badge__text">лидер продаж</p>
+									</div>
+									<div class="badge badge__ship">
+										<i class="icon-box"></i>
+										<p class="badge__text">бесплатная доставка</p>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="recomend__item">
+							<div class="recomend__wrap">
+								<button class="wishlist__btn wishlist__item">
+									<i class="icon-star"></i>
+								</button>
+								<img src="images/catalog/catalog7.jpg" alt="special foto" class="recomend__img">
+								<p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+								<div class="recomend__box">
+									<div class="recomend__price">
+										<div class="recomend__price__new">1900 ₽</div>
+										
+									</div>
+								</div>
+							
+							</div>
+						</li>
+
+						<li class="recomend__item">
+							<div class="recomend__wrap">
+								<button class="wishlist__btn wishlist__item">
+									<i class="icon-star"></i>
+								</button>
+								<img src="images/catalog/catalog8.jpg" alt="special foto" class="recomend__img">
+								<p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+								<div class="recomend__box">
+									<div class="recomend__price">
+										<div class="recomend__price__new">1650 ₽</div>
+										<div class="recomend__price__old">2000 ₽</div>
+										
+									</div>
+								</div>
+								<div class="badge__box">
+									<div class="badge badge__saler">
+										<i class="icon-first"></i>
+										<p class="badge__text">лидер продаж</p>
+									</div>
+									
+								</div>
+							</div>
+						</li>
+						<li class="recomend__item">
+							<div class="recomend__wrap">
+								<button class="wishlist__btn wishlist__item">
+									<i class="icon-star"></i>
+								</button>
+								<img src="images/catalog/catalog9.jpg" alt="special foto" class="recomend__img">
+								<p class="recomend__text">Супер пупер навороченные обои с краивыми ...</p>
+								<div class="recomend__box">
+									<div class="recomend__price">
+										<div class="recomend__price__new">2500 ₽</div>
+										<div class="recomend__price__old">2700 ₽</div>
+									</div>
+								</div>
+								<div class="badge__box">
+									<div class="badge badge__saler">
+										<i class="icon-first"></i>
+										<p class="badge__text">лидер продаж</p>
+									</div>
+									<div class="badge badge__ship">
+										<i class="icon-box"></i>
+										<p class="badge__text">бесплатная доставка</p>
+									</div>
+								</div>
+							</div>
+						</li>
+
+
+
+
+
+						 <div class="comment-pagination pagination__catalog">
+							<ul class="comment-pagination__list">
+								<li class="comment-pagination__item comment-pagination__arrow">
+									<a href="#" class="comment-pagination__link ">
+										<i class="icon-ar-l"></i>
+									</a>
+								</li>
+								<li class="comment-pagination__item">
+									<a href="#" class="comment-pagination__link">1</a>
+								</li>
+								<li class="comment-pagination__item">
+									<a href="#" class="comment-pagination__link">2</a>
+								</li>
+								<li class="comment-pagination__item">
+									<a href="#" class="comment-pagination__link">...</a>
+								</li>
+								<li class="comment-pagination__item">
+									<a href="#" class="comment-pagination__link">321</a>
+								</li>
+								<li class="comment-pagination__item">
+									<a href="#" class="comment-pagination__link">322</a>
+								</li>
+								<li class="comment-pagination__item comment-pagination__arrow">
+									<a href="#" class="comment-pagination__link "><i class="icon-ar-r"></i></a>
+								</li>
+							</ul>
+						</div> 
+
+					</ul>
+				</div>
+			</div>
+			<div class="bg-wave">
+				<img src="images/wave-footer.svg" alt=" bg wave" />
+		</div>
+		</section>
+
+	</main>
+	<footer class="footer">
+		<div class="container">
+				<h4 class="footer__title">
+						Хотите получить уведомление о скидке и новой коллекции?
+				</h4>
+				<div class="footer__subscribe">
+						<form class="footer__form" action="#">
+								<input class="footer__input" type="text" placeholder="Ваш email" />
+								<button class="footer__btn">Подписаться</button>
+						</form>
+				</div>
+				<div class="footer__content">
+						<div class="footer__nav">
+								<h4 class="footer__nav__title">О компании</h4>
+								<ul class="footer__list">
+										<li class="footer__item">
+												<a class="footer__link" href="#">Вакансии</a>
+										</li>
+										<li class="footer__item">
+												<a class="footer__link" href="#">Шоурум</a>
+										</li>
+										<li class="footer__item">
+												<a class="footer__link" href="#">Как сделать заказ</a>
+										</li>
+										<li class="footer__item">
+												<a class="footer__link" href="#">Пользовательское соглашение</a>
+										</li>
+								</ul>
+						</div>
+						<div class="footer__nav">
+								<h4 class="footer__nav__title">Каталог</h4>
+								<ul class="footer__list">
+										<li class="footer__item">
+												<a class="footer__link" href="#">Акции</a>
+										</li>
+										<li class="footer__item">
+												<a class="footer__link" href="#">Распродажа</a>
+										</li>
+										<li class="footer__item">
+												<a class="footer__link" href="#">Доставка</a>
+										</li>
+										<li class="footer__item">
+												<a class="footer__link" href="#">Оплата</a>
+										</li>
+								</ul>
+						</div>
+						<div class="footer__contact">
+								<h4 class="footer__nav__title">Контакты</h4>
+								<a class="footer__adress" href="#">г.Санкт-Петергбург Лиговский пр-т 75</a>
+								<a class="footer__email" href="mailto:Dejavugit@gmail.com">Dejavugit@gmail.com</a>
+								<a class="footer__phone" href="tel:+79533629737">+7-953-362-97-37</a>
+						</div>
+						<div class="footer__nav">
+								<a class="footer__logo" href="#">
+										<img src="images/footer-logo.png" alt="логотип футтера" />
+								</a>
+						</div>
+				</div>
+				<ul class="social__list">
+						<li class="social__item">
+								<a href="#" class="social__link-icon"><i class="icon-pinterest"></i></a>
+						</li>
+						<li class="social__item">
+								<a href="#" class="social__link-icon"><i class="icon-instagram"></i></a>
+						</li>
+						<li class="social__item">
+								<a href="#" class="social__link-icon"><i class="icon-telegram"></i></a>
+						</li>
+						<li class="social__item">
+								<a href="#" class="social__link-icon"><i class="icon-vk"></i></a>
+						</li>
+				</ul>
+				<div class="footer__bot">
+						<p class="footer__copy">© 2021.All Rights Reserved.</p>
+						<div class="footer__accept">
+								<p class="footer__accept-text">Мы принимаем:</p>
+								<img src="images/accept.png" alt="accept-img" />
+						</div>
+				</div>
+		</div>
+</footer>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

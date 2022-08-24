@@ -4,8 +4,6 @@ const scss =          require('gulp-sass');
 const autoprefixer =  require('gulp-autoprefixer');
 const del =           require('del');
 const browserSync =   require('browser-sync').create();
-
-
 const concat =        require('gulp-concat');
 const uglify =        require('gulp-uglify');
 const imagemin =      require('gulp-imagemin');
@@ -91,8 +89,8 @@ exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
+
+
+
 exports.build = series(cleanDist,images,build);
-
-
-
 exports.default = parallel(styles,scripts,browsersync,watching);
