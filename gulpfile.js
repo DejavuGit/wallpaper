@@ -69,7 +69,7 @@ function build() {
         'app/css/style.min.css',
         'app/js/main.min.js',
         'app/fonts/**/**',
-        'app/fanicon/**/**',
+        'app/favicon/**/**',
     ], {base: 'app'})
     .pipe(dest('dist'))
 }
